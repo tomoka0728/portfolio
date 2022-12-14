@@ -1,532 +1,1060 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Portfolio</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/process_style.css" type="text/css" id="style">
-    <!-- fonts -->
-    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
-    <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
-    
+@charset "UTF-8";
 
-</head>
-<body>
-<!-- ヘッダー -->
-<header>
-    <h1><a href="top.html">PORTFOLIO</a></h1>
-    <nav id="mainMenu" class="menu">
-        <ul>
-            <li><a href="top.html#MENU_1">PROFILE</a></li>
-            <li><a href="top.html#MENU_2">PRODUCTION</a></li>
-            <li><a href="top.html#MENU_3">CONTACT</a></li>
-        </ul>
-    </nav>
-</header>
+* {
+  box-sizing: border-box;
+}
 
-<!-- メイン -->
-<main class="content">
+html {
+  font-size: 62.5%;
+}
 
-        <article class="article">
-          <div class="article-container">
-              <h2><span>宿泊施設のアプリ制作における上流工程</span></h2>
-            <div class="article-body">
-              
-              <div style="text-align: center">
-              <p>
-                職業訓練で12日間の企業実習を行い、上流工程を勉強しました。<br>
-              "宿泊施設（以下コンプライアンス社様）では、予約管理から宿泊費計算まですべてを経営者様自らの手で台帳に記入しており、効率化とコスト削減の為にアプリ開発をご依頼いただいた"という設定です。<br>
-              また、サーバーの準備や運用、保守などはコンプライアンス社様側で行っていただく想定です。<br><br>
-              <br>
-              <u>4人チームでの作業の為、今回は私が主に担当した部分のみを公開いたします。</u><br>
-              ※データの個人利用は許可されております<br><br><br><br><br><br>
+:focus {
+  outline: none;
+}
 
-<!-- ここから要件定義 -->
-              <section class="works section" id="works">
-                  <div class="container">
-                  <div class="works-list0">
-                    
+a {
+  text-decoration: none;
+}
 
-                      <a class="works-item2" href="img/youken1.png" data-lightbox="group">
-                            <div class="works-img"><img src="img/youken1.png" /></div>
-                            <p class="works-name">要件定義書１/５</p>
-                      </a>
-                      <a class="works-item2" href="img/youken2.png" data-lightbox="group">
-                              <div class="works-img"><img src="img/youken2.png" /></div>
-                              <p class="works-name">要件定義書２/５</p>
-                      </a>
-                      <a class="works-item2" href="img/youken3.png" data-lightbox="group">
-                            <div class="works-img"><img src="img/youken3.png" /></div>
-                            <p class="works-name">要件定義書３/５</p>
-                      </a>
-                      <a class="works-item2" href="img/youken4.png" data-lightbox="group">
-                          <div class="works-img"><img src="img/youken4.png" /></div>
-                          <p class="works-name">要件定義書４/５</p>
-                      </a>
-                      <a class="works-item2" href="img/youken5.png" data-lightbox="group">
-                            <div class="works-img"><img src="img/youken5.png" /></div>
-                            <p class="works-name">要件定義書５/５</p>
-                      </a>
-              </section>
-            
-            <div style="text-align: center" class="fukidashi">
-              </p>
-              <b>要件定義書</b>
-              <p>
-                チームで話し合ってまとめた要求定義書に基づき、更に掘り下げた要件定義書を作成しました。
-              </p>
-            </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-            </div>
-            </div>
-            </div>
-<!-- ここから要件要素 -->
-            <div class="article-body">
-            <div style="text-align: center">
-            <section class="works section" id="works">
-                <div class="container">
-                <div class="works-list0">
+a,
+a::after,
+a::before,
+button,
+button::after,
+button::before,
+input,
+textarea,
+select {
+  transition: all 0.7s;
+}
 
-                  <a class="works-item2" href="img/sa2.png" data-lightbox="group">
-                    <div class="works-img"><img src="img/sa2.png" /></div>
-                    <p class="works-name">要件要素</p>
-                  </a>
-          
-                
-            </section>
+a img,
+button img {
+  transition-duration: 0.35s;
+}
 
-            <div style="text-align: center" class="fukidashi">
-              </p>
-              <b>要件要素</b>
-              <p>
-              アプリを制作するにあたり、必要な機能を大中小項目に振り分けました。
-              </p>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            </div>
-            </div>
-            </div>
-<!-- ここから新業務フロー -->
-            <div class="article-body">
-            <div style="text-align: center">
-              <section class="works section" id="works">
-                  <div class="container">
-                  <div class="works-list0">
+button {
+  outline: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  cursor: hand;
+}
+
+input,
+textarea,
+select {
+  font-size: 1.6rem;
+}
+
+input,
+textarea {
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+select {
+  appearance: button;
+}
+
+p,
+dl,
+ul,
+form {
+  margin: 25px 0;
+  word-break: break-all;
+}
+
+p:last-child,
+dl:last-child,
+ul:last-child,
+form:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  p,
+  form {
+    margin: 0 0 1.7rem;
+  }
+  p:last-child,
+  form:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* ----- ▼ レイアウト▼ ----- */
+/* 基本 */
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff url("../img/layout/bg_image.png");
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font: 500 1.6rem / calc(1.6rem + 1.05rem) "Yu Gothic", Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #615151;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 7px 20px;
+  height: 220px;
+  background: linear-gradient(125deg, #89b4f0 0%, rgba(215, 239, 255, 0) 100%);
+  text-align: center;
+  transition: all 0.7s;
+  z-index: 1;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header.scroll {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transform: translateY(-177px);
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+main > article:first-of-type > *:first-child {
+  margin-top: 100px;
+}
+
+footer {
+  margin: 200px auto 50px;
+  text-align: center;
+}
+
+a {
+  color: #615151;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* メニュー */
+header .menu ul {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+header .menu ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+header .menu a {
+  color: #7b8493;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.fixed-menu {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+}
+
+.fixed-menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fixed-menu ul li:not(:first-of-type) a,
+.fixed-menu ul li:not(:first-of-type) button {
+  border-left: 0 !important;
+}
+
+.fixed-menu a,
+.fixed-menu button {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid #fff !important;
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.fixed-menu a::before,
+.fixed-menu button::before {
+  position: absolute;
+  width: 26px;
+  top: 10px;
+  left: calc(50% - 13px);
+  text-align: center;
+  font: 900 16px/1 "Font Awesome 5 Free";
+}
+
+.fixed-menu a:hover,
+.fixed-menu button:hover {
+  opacity: 1 !important;
+  background: #fff !important;
+  color: #071d43 !important;
+}
+
+.fixed-menu .pagetop a::before,
+.fixed-menu .pagetop button::before {
+  content: "\f106";
+}
+
+.fixed-menu .prev a::before,
+.fixed-menu .prev button::before {
+  content: "\f104";
+}
+
+.fixed-menu .next::before {
+  content: none;
+}
+
+.fixed-menu .next a::before,
+.fixed-menu .next button::before {
+  content: "\f105";
+}
+
+.fixed-menu .toc a::before,
+.fixed-menu .toc button::before {
+  content: "\f0ca";
+}
+
+.fixed-menu .home a::before,
+.fixed-menu .home button::before {
+  content: "\f015";
+}
+
+@media only screen and (max-width: 900px) {
+  header .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+  header .menu::before {
+    content: "menu";
+    display: block;
+    width: 50px;
+    background: #fff;
+    color: #071d43;
+  }
+  header .menu ul {
+    width: calc(100vw - 110px);
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  header .menu ul::before,
+  header .menu ul::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  header .menu ul::before {
+    content: "\f053";
+    left: 75px;
+  }
+  header .menu ul::after {
+    content: "\f054";
+    right: 5px;
+  }
+  .fixed-menu {
+    right: 30px;
+  }
+}
+
+/* 見出し */
+h1 {
+  position: relative;
+  margin: 30px auto;
+  width: 300px;
+  font: 30px/1 "Shippori Mincho", serif;
+}
+
+h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 35px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  border: 1px solid #fff;
+  top: 0;
+}
+
+h1::before {
+  border-right: 0;
+  left: 0;
+}
+
+h1::after {
+  border-left: 0;
+  right: 0;
+}
+
+header.scroll h1 {
+  margin: 0;
+}
+
+header.scroll h1 a {
+  height: auto;
+  padding: 0;
+}
+
+h2 {
+  max-width: 80%;
+  margin: 150px auto 50px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 160%;
+  color: #405783;
+}
+
+h2 span {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  background: rgba(85, 116, 220, 0.2);
+}
+
+h2 span::before,
+h2 span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+}
+
+h2 span::before {
+  top: 0;
+  left: 0;
+  border-color: #80a0df #80a0df transparent;
+}
+
+h2 span::after {
+  bottom: 0;
+  right: 0;
+  border-color: transparent transparent #80a0df;
+}
+
+h3,
+h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+h3 {
+  margin: 70px auto 75px;
+  text-align: center;
+  color: #405783;
+  max-width: calc(100% - 100px);
+}
+
+h3 span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 span::before,
+h3 span::after {
+  content: "///";
+}
+
+h3 span::before {
+  margin-right: 30px;
+}
+
+h3 span::after {
+  margin-left: 30px;
+}
+
+h4,
+h5 {
+  color: #3c5c84;
+}
+
+h4 {
+  margin: 70px auto 50px;
+  border-bottom: 1px solid #3c5c84;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* リスト */
+ul .description,
+ol .description {
+  margin-left: 10px;
+}
+
+ul .description::before,
+ol .description::before {
+  content: "…";
+  margin-right: 10px;
+}
+
+ul li.next {
+  list-style: none;
+}
+
+ul li.next::before {
+  content: "→";
+  margin-right: 5px;
+  font-size: 120%;
+}
+
+ul.small {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.small li {
+  display: inline;
+}
+
+ul.small li::before {
+  color: #6c92ae;
+}
+
+ul.small li:not(:first-child):not(.next)::before {
+  margin: 0 5px 0 2px;
+  content: ":";
+  font-weight: 900;
+}
+
+ul.small li.next::before {
+  margin: 0 7px 0 2px;
+}
+
+dl {
+  margin: 10px 0;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 0 15px 40px;
+  border-bottom: 1px dotted #3c5c84;
+}
+
+dl dd:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+dl.inline {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+}
+
+dl.inline dt,
+dl.inline dd {
+  vertical-align: top;
+  margin: 0 0 15px 0;
+  padding: 0 0 15px;
+}
+
+dl.inline dt:last-of-type,
+dl.inline dd:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+dl.inline dt {
+  width: 200px;
+  padding: 0 30px 10px 0;
+  padding-right: 30px;
+  border-bottom: 1px dotted #3c5c84;
+}
+
+dl.inline dt:last-of-type {
+  border-bottom: 0;
+}
+
+dl.inline dd {
+  width: calc(100% - 200px - 30px);
+}
+
+dl.border {
+  padding: 15px 20px;
+  border: 1px dotted #3c5c84;
+}
+
+/* フォーム */
+.form-inline > *,
+.form-block > * {
+  margin-bottom: 5px;
+}
+
+.form-block dl dt,
+.form-block dl dd {
+  border-bottom: 0;
+}
+
+.form-block dl.inline dt {
+  width: 130px;
+}
+
+.form-block dl.inline dd {
+  width: calc(100% - 130px);
+}
+
+.form-block > *,
+.form-block dl dd > * {
+  width: 100%;
+}
+
+.required::after {
+  content: "*";
+  color: #dfbf80;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder,
+button:not(.manu-toggler)::placeholder,
+input[type="submit"]::placeholder,
+input[type="button"]::placeholder {
+  color: #3c5c84;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #3c5c84;
+  background: transparent;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+select:hover,
+select:focus {
+  border: 1px solid #6c92ae;
+}
+
+button:not(.manu-toggler),
+input[type="submit"],
+input[type="button"] {
+  background: #80a0df;
+  border: 1px solid #6c92ae;
+  color: #040c24;
+}
+
+button:not(.manu-toggler):hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  border-color: #3c5c84;
+  background: #3c5c84;
+}
+
+/* 装飾 */
+b,
+em,
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: normal;
+  background: linear-gradient(transparent 50%, #14548d 50%);
+}
+
+strong {
+  background: #14548d;
+}
+
+hr {
+  margin: 100px auto;
+  border: 0;
+  color: #dfbf80;
+  font-size: 10px;
+  text-align: center;
+}
+
+hr::after {
+  content: "///";
+  letter-spacing: 6px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-small {
+  font-size: smaller;
+}
+
+/* ヘッダー画像 */
+.header-image {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1000px;
+  max-height: calc(100vh - 370px);
+  margin: 75px auto;
+  text-align: center;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-image.size-xs {
+  width: calc((100vh - 370px) * 0.6) !important;
+}
+
+.header-image.size-sm {
+  width: calc((100vh - 370px) * 0.9) !important;
+}
+
+.header-image.type-block {
+  width: 100% !important;
+  max-width: 100%;
+  max-height: calc(100vh - 220px);
+  margin-top: auto;
+}
+
+.header-image.type-block.size-xs {
+  max-height: calc((100vh - 220px) * 0.6) !important;
+}
+
+.header-image.type-block.size-sm {
+  max-height: calc((100vh - 220px) * 0.8) !important;
+}
+
+.header-image.type-rounded {
+  border-radius: 30px;
+}
+
+.header-image.type-square,
+.header-image.type-circle {
+  width: calc(100vh - 370px);
+  height: calc(100vh - 370px);
+}
+
+.header-image.type-square.size-xs,
+.header-image.type-circle.size-xs {
+  width: calc((100vh - 370px) * 0.6) !important;
+  height: calc((100vh - 370px) * 0.6) !important;
+}
+
+.header-image.type-square.size-sm,
+.header-image.type-circle.size-sm {
+  width: calc((100vh - 370px) * 0.8) !important;
+  height: calc((100vh - 370px) * 0.8) !important;
+}
+
+.header-image.type-circle img {
+  border-radius: 50%;
+}
+
+/*Works*/
+.works-list0 {
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: -40px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.works-item {
+  width: 31.74603%;
+  margin-right: 1.58730%;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.works-item2 {
+  width: 45%;
+  margin-right: 1.58730%;
+  margin-bottom: 40px;
+  color: #333;
+  object-fit:cover;
   
-                    <a class="works-item2" href="img/新業務受付.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/新業務受付.png" /></div>
-                      <p class="works-name">新・業務フロー(受付け)</p>
-                    </a>
+}
 
-                    <a class="works-item2" href="img/新業務実績.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/新業務実績.png" /></div>
-                      <p class="works-name">新・業務フロー(実績投入)</p>
-                    </a>
 
-                    <a class="works-item2" href="img/新業務決算.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/新業務決算.png" /></div>
-                      <p class="works-name">新・業務フロー(決算)</p>
-                    </a>
-            
-                  
-              </section>
-  
-              <div style="text-align: center" class="fukidashi">
-                </p>
-                <b>新業務フロー</b>
-                <p>
-                新しい業務（システム開発後）の流れをフローチャートで表したものです。<br>
-                どこから情報を参照し登録するのか？<br>
-                一度経理に送ったデータは修正できないがどうするのか？<br>
-                何度も指摘をいただき苦戦したポイントでした。<br>
-                </p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              --------------------これ以降は予約に関する操作を担当しました--------------------
-              </div>
-              </div>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-<!-- ここから機能一覧 -->
-            <div class="article-body">
-              <div style="text-align: center">
-                <section class="works section" id="works">
-                    <div class="container">
-                    <div class="works-list0">
-    
-                      <a class="works-item2" href="img/plan.png" data-lightbox="group">
-                        <div class="works-img"><img src="img/plan.png" /></div>
-                        <p class="works-name">機能一覧</p>
-                      </a>
+.works-item:hover {
+  opacity: .9;
+}
 
-                </section>
-    
-                <div style="text-align: center" class="fukidashi">
-                  </p>
-                  <b>機能一覧</b>
-                  <p>
-                  予約機能に必要な機能の一覧です。<br>
-                  </p>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                </div>
-                </div>
-                </div>
-<!-- ここから画面遷移 -->
-              <div class="article-body">
-              <div style="text-align: center">
-              <section class="works section" id="works">
-                <div class="container">
-                <div class="works-list0">
+.works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
 
-                    <a class="works-item2" href="img/gamensenni.png" data-lightbox="group">
-                          <div class="works-img"><img src="img/gamensenni.png" /></div>
-                          <p class="works-name">画面遷移図</p>
-                    </a>
-                    
-            </section>
-          
-          <div style="text-align: center" class="fukidashi">
-            </p>
-            <b>画面遷移図</b>
-            <p>
-              Webブラウザ側とサーバー側に分けた画面遷移図です。
-            </p>
-          </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
-          </div>
-          </div>
-<!-- ここからログイン -->
-          <div class="article-body">
-            <div style="text-align: center">
-              <section class="works section" id="works">
-                  <div class="container">
-                  <div class="works-list0">
-  
-                    <a class="works-item2" href="img/login.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/login.png" /></div>
-                      <p class="works-name">ログイン画面</p>
-                    </a>
+.works-img img {
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-                    <a class="works-item2" href="img/login_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/login_ser.png" /></div>
-                      <p class="works-name">ログイン画面Servlet</p>
-                    </a>
 
-              </section>
-  
-              <div style="text-align: center" class="fukidashi">
-                </p>
-                <b>ログイン機能</b>
-                <p>
-                まずアプリを開くとログイン画面からスタートします。<br>
-                ここではIDとパスワードを入力し、入力パラメータのチェックを行いログインをします。<br>
-                </p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              </div>
-              </div>
-              </div>
-<!-- ここから管理者メニュー -->
-          <div class="article-body">
-            <div style="text-align: center">
-              <section class="works section" id="works">
-                  <div class="container">
-                  <div class="works-list0">
-  
-                    <a class="works-item2" href="img/manage.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/manage.png" /></div>
-                      <p class="works-name">管理者メニュー</p>
-                    </a>
+.works-name {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+}
 
-                    <a class="works-item2" href="img/search.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/search.png" /></div>
-                      <p class="works-name">宿泊台帳検索</p>
-                    </a>
+.works-info {
+  font-size: 10px;
+  margin-top: 5px;
+}
 
-                    <a class="works-item2" href="img/manage_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/manage_ser.png" /></div>
-                      <p class="works-name">管理者メニューServlet</p>
-                    </a>
+.fukidashi{
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
 
-                    <a class="works-item2" href="img/ssearch_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/ssearch_ser.png" /></div>
-                      <p class="works-name">宿泊台帳検索Servlet</p>
-                    </a>
+.fukidashi:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #e0edff;
+}
 
-              </section>
-  
-              <div style="text-align: center" class="fukidashi">
-                </p>
-                <b>管理者メニュー</b>
-                <p>
-                ログイン後、管理者メニューに遷移します。<br>
-                今回は予約に関する操作を行いたいため、宿泊管理画面をクリックします。<br>
-                クリックした先は宿泊に関する検索を行う画面になります。<br>
-                </p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              </div>
-              </div>
-              </div>
-<!-- ここから予約キャンセル -->
-          <div class="article-body">
-            <div style="text-align: center">
-              <section class="works section" id="works">
-                  <div class="container">
-                  <div class="works-list0">
-  
-                    <a class="works-item2" href="img/ssearchResult.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/ssearchResult.png" /></div>
-                      <p class="works-name">宿泊台帳検索結果</p>
-                    </a>
+.fukidashi p {
+  margin: 0;
+  padding: 0;
+}
 
-                    <a class="works-item2" href="img/Cancel.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/Cancel.png" /></div>
-                      <p class="works-name">予約キャンセル確認</p>
-                    </a>
+.game {
+  vertical-align: middle;
+  max-height: 60%;
+  max-width: 60%;
+}
 
-                    <a class="works-item2" href="img/CancelOk.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/CancelOk.png" /></div>
-                      <p class="works-name">予約キャンセル確定</p>
-                    </a>
+.game2 {
+  vertical-align: middle;
+  max-height: 70%;
+  max-width: 70%;
+}
+.game3 {
+  vertical-align: middle;
+  max-height: 40%;
+  max-width: 40%;
+}
 
-                    <a class="works-item2" href="img/Cancel_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/Cancel_ser.png" /></div>
-                      <p class="works-name">予約キャンセルServlet</p>
-                    </a>
+/*--------------------------------
+ 下層：Worksページ
+---------------------------------*/
+.article {
+  padding: 80px 0;
+}
 
-              </section>
-  
-              <div style="text-align: center" class="fukidashi">
-                </p>
-                <b>予約キャンセル操作</b>
-                <p>
-                宿泊検索後、予約キャンセルの操作を行います。<br>
-                各情報横の「削除」ボタンは、現在チェックインが済んでいない場合にのみ表示されます。<br>
-                (予約キャンセルServletのメカニズム2を参照)<br>
-                「予約削除する」をクリックすると、DB上の削除FLGがTrueになり削除操作は完了となります。<br>
-                </p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              </div>
-              </div>
-              </div>
-<!-- ここから新規予約 -->
-          <div class="article-body">
-            <div style="text-align: center">
-              <section class="works section" id="works">
-                  <div class="container">
-                  <div class="works-list0">
-  
-                    <a class="works-item2" href="img/search2.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/search2.png" /></div>
-                      <p class="works-name">予約台帳検索</p>
-                    </a>
+.article-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-                    <a class="works-item2" href="img/calendar.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/calendar.png" /></div>
-                      <p class="works-name">予約カレンダー</p>
-                    </a>
+.article-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-                    <a class="works-item2" href="img/searchCalendar_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/searchCalendar_ser.png" /></div>
-                      <p class="works-name">予約台帳検索Servlet</p>
-                    </a>
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
 
-                    <a class="works-item2" href="img/calendar_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/calendar_ser.png" /></div>
-                      <p class="works-name">予約カレンダーServlet</p>
-                    </a>
+.article-body h3 {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-left: 1em;
+}
 
-              </section>
-  
-              <div style="text-align: center" class="fukidashi">
-                </p>
-                <b>新規予約登録操作</b>
-                <p>
-                1つ前の予約キャンセル操作にて、削除ボタンではなく「新規登録」を行った場合の操作です。<br>
-                まずはご希望の情報で検索をかけます。<br>
-                1部屋に泊まれる最大人数は5名となるので、6名以上の場合は部屋数を2以上入力します。<br>
-                すると、予約カレンダーが表示されるため、宿泊したい部屋と日数を複数選択します。<br>
-                ※〇は満室のお部屋です。<br>
-                <br>
-                </p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              </div>
-              </div>
-              </div>
-<!-- ここから予約登録 -->
-          <div class="article-body">
-            <div style="text-align: center">
-              <section class="works section" id="works">
-                  <div class="container">
-                  <div class="works-list0">
-  
-                    <a class="works-item2" href="img/signUp.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/signUp.png" /></div>
-                      <p class="works-name">情報入力画面</p>
-                    </a>
+.article-body h3:not(:first-child) {
+  margin-top: 50px;
+}
 
-                    <a class="works-item2" href="img/conf.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/conf.png" /></div>
-                      <p class="works-name">予約確認画面</p>
-                    </a>
+.article-body h3::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  content: "";
+  border-radius: 3px;
+  background-color: #333;
+}
 
-                    <a class="works-item2" href="img/comp.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/comp.png" /></div>
-                      <p class="works-name">予約完了</p>
-                    </a>
+.article-body p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
 
-                    <a class="works-item2" href="img/signUp_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/signUp_ser.png" /></div>
-                      <p class="works-name">情報登録Servlet</p>
-                    </a>
+.article-body a{
+  color: rgb(105, 182, 226)
+}
 
-                    <a class="works-item2" href="img/conf_ser.png" data-lightbox="group">
-                      <div class="works-img"><img src="img/conf_ser.png" /></div>
-                      <p class="works-name">予約確認Servlet</p>
-                    </a>
+.home-link {
+  text-align: center;
+}
 
-              </section>
-  
-              <div style="text-align: center" class="fukidashi">
-                </p>
-                <b>新規予約登録操作2</b>
-                <p>
-                最後に予約情報の詳細を登録する画面です。<br>
-                必要な情報の入力をすべて行います。検索画面やカレンダー画面で入力した情報は自動的に入力されます。<br>
-                予約確認画面で確定をクリックすると、台帳番号が発行されると同時にDBの予約台帳TBLに情報が登録されます。<br>
-                これで宿泊予約がすべて完了しました。<br>
-                </p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              </div>
-              </div>
-              </div>
-<!-- ここから新業務画面遷移 -->
-              <div class="article-body">
-              <div style="text-align: center">
-              <section class="works section" id="works">
-                <div class="container">
-                <div class="works-list0">
+/*--------------------------------
+ ページトップ
+---------------------------------*/
+#page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #3f98ef;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #3f98ef;
+}
 
-                    <a class="works-item2" href="img/newTrans.png" data-lightbox="group">
-                          <div class="works-img"><img src="img/newTrans.png" /></div>
-                          <p class="works-name">新業務の画面遷移</p>
-                    </a>
-                    
-            </section>
-          
-          <div style="text-align: center" class="fukidashi">
-            </p>
-            <b>新業務の画面遷移図</b>
-            <p>
-              最後にシステムの画面遷移図です。<br>
-              後々、お客様自身がWeb上で予約ができるシステムがほしい、というご要望ですが<br>
-              今回の実習中にはそこまで至らず、簡単な画面遷移のみ制作してみました。<br>
-            </p>
-          </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h4>実習を終えて-2022年12月9日-</h4>
-            <p>初めは上流工程がどういった作業をするのかさえわからない状態でのスタートでした。<br>
-              お手本等はなく担当者様からの口頭のヒントのみだった為、グループで毎日話し合いながら制作を行いました。<br>
-              1つなにかが完成するたびご指摘をいただいてばかりでしたが、お陰でなんとか外部設計まで辿りつきました。<br>
-              予約システムならなんとなく想像できるから比較的簡単だろうと侮っていたと痛感し、これが自分が全く知らない業界のことであったら…と思うと、
-              お客様へのヒアリングがどれほど大切で、細心の注意を払わねばならないのか、考えさせられました。<br>
-              <br>
-              まだまだ修正する部分や手つかずの部分はありますし、もっと良い書き方があるのかもしれないと感じますが<br>
-              初めての上流工程は楽しくとても充実した実習となりました。<br>
-              <br>
-            </p>
-          </div>
-          </div>
-          </div>
-              
-              
 
-          <div class="article-body">
-              <div class="home-link">
-                <p><a href="top.html#MENU_2">APPLICATION一覧へ</a></p>
-              </div>
-            </div>
-            <div id="page_top"><a href="#"></a></div>
-    </article>
-</main>
+/* スマホ設定 */
+@media only screen and (max-width: 900px) {
+  body,
+  button,
+  input,
+  textarea {
+    font-size: 1.6rem;
+    line-height: calc(1.6rem + 1.05rem);
+  }
+  header {
+    flex-direction: column;
+    top: -220px;
+  }
+  header.scroll {
+    align-items: start;
+    transform: translateY(45px);
+  }
+  header.scroll h1 {
+    margin: 30px auto;
+  }
+  header.scroll h1 a {
+    height: 100%;
+    padding: 35px 0;
+  }
+  main {
+    margin: auto 20px;
+  }
+  /* 見出し */
+  h3 {
+    max-width: 100%;
+  }
+  /* 装飾 */
+  /* ヘッダー画像 */
+  .header-image {
+    max-width: calc(100% - 40px);
+    max-height: max-content;
+    margin: 20px auto;
+  }
+  .header-image.size-xs,
+  .header-image.size-sm {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .header-image.size-xs {
+    max-width: calc(100% - 90px);
+    margin: 45px auto;
+  }
+  .header-image.size-sm {
+    max-width: calc(100% - 60px);
+    margin: 30px auto;
+  }
+  .header-image.type-block {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .header-image.type-block.size-xs {
+    max-height: calc(100vw * 0.45) !important;
+  }
+  .header-image.type-block.size-sm {
+    max-height: calc(100vw * 0.6) !important;
+  }
+  .header-image.type-square,
+  .header-image.type-circle {
+    max-width: 100%;
+    width: calc(100vw - 40px);
+    height: calc(100vw - 40px);
+  }
+  .header-image.type-square.size-xs,
+  .header-image.type-circle.size-xs {
+    width: calc(100vw - 200px) !important;
+    height: calc(100vw - 200px) !important;
+  }
+  .header-image.type-square.size-sm,
+  .header-image.type-circle.size-sm {
+    width: calc(100vw - 150px) !important;
+    height: calc(100vw - 150px) !important;
+  }
+  .area.area-thumbnail div {
+    width: calc((100vw - 70px) / 3);
+    height: calc((100vw - 70px) / 3);
+  }
+  /* リスト */
+  ul .description,
+  ol .description {
+    display: block;
+    margin-left: 10px;
+  }
+  ul .description::before,
+  ol .description::before {
+    content: "└";
+    margin-right: 10px;
+  }
+  dl.border dt,
+  dl.border dd,
+  dl.inline dt,
+  dl.inline dd {
+    display: block;
+  }
+  dl.border dt,
+  dl.inline dt {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  dl.border dd,
+  dl.inline dd {
+    width: 100%;
+    padding-left: 40px;
+  }
+  /* フォーム */
+  .form-inline input {
+    width: 45%;
+  }
+  .form-block dl.inline dt {
+    width: 100%;
+  }
+  .form-block dl.inline dd {
+    width: 100%;
+    padding-left: 40px;
+  }
+  .form-block > *,
+  .form-block dl dd > * {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+/* 下層ページ */
+.article {
+  padding: 50px 0;
+}
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<!-- script -->
-<script src="js/general.js"></script>
-</body>
-</html>
+.article-body h3 {
+  font-size: 16px;
+  padding-left: .8em;
+}
+
+.article-body h3:not(:first-child) {
+  margin-top: 30px;
+}
+
+.article-body p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+
+/* ----- ▲ レイアウト▲ ----- */
